@@ -1,0 +1,265 @@
+:root {
+    --oswald: 'Oswald', sans-serif;
+    --dmsans: 'DM Sans', sans-serif;
+    --white: #fff;
+    --black: #1a1a1a;
+    --gray: #7a7a7a;
+    --lightgray: #cccccc;
+    --orange: #f48440;
+    --red: #f03c3a;
+    --blue: #0e0e18;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+font-family: 'Oswald', sans-serif;
+}
+body{
+font-family: 'DM Sans', sans-serif;
+}
+
+/* navbar start */
+.main-button{
+    border: 1px solid black;
+    transition: all 0.3s;
+}
+.main-button:hover{
+    border: 1px solid;
+    color: var(--orange);
+    border-color: var(--orange);
+}
+.line-under{
+    position: relative;
+    
+
+}
+.line-under::after{
+    position: absolute;
+    content: "";
+    left: 40%;
+    bottom: 17%;
+    height: 8%;
+    width: 25%;
+    background-color: var(--orange);
+}
+
+
+.Request-title{
+    color: var(--orange);
+    margin-top: 150px;
+}
+#sideBar{
+    display:none;
+}
+#navbar-icon-first{
+font-size: 28px;
+display: none;
+}
+
+/* navbar ends */
+/* home starts */
+.home-img{
+    background-image: url(../images/homeimage.png);
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+/* home ends */
+/* we come to you starts */
+.secondery-button{
+border: 1px solid var(--orange);
+color: var(--white);
+background-color: var(--orange);
+
+}
+.secondery-button:hover{
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    background-color: var(--black);
+    transition: all 0.3s;
+}
+.bg-change{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 40px 0;
+}
+.we-come-to-you{
+    font-size: 74px;
+    margin: 60px 0px 40px 10px;
+}
+.margin-push{
+    margin-bottom: -25% ;
+    margin-right: 4%;
+    
+}
+.we-come-to-you-text{
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+/* we come to you ends  */
+/* get ready for your next adventure starts */
+.get-ready-text {
+    font-size: 70px;
+    font-weight: 700;
+}
+.orange-part{
+    color: var(--orange);
+}
+/* get ready for your next adventure starts */
+/* how does it work starts  */
+.howItWorksText{
+    font-size: 70px;
+    font-weight: 700;
+}
+/* how does it work ends  */
+
+/* footer starts */
+.footer-text{
+font-size: 12px;
+}
+/* footer ends */
+ul {
+  list-style-type: none;
+  line-height: 3.5vh;
+  margin:0px 0px 0px 0px ;
+  padding: 0px 0px 0px 0px;
+}
+.icons i{
+    margin: 0.5vw;
+    
+    
+}
+.icons{
+    margin: auto auto 6vh;
+}
+
+/* ________about us________ */
+
+.weComeWithDreamCar{
+    color: var(--white);
+} 
+.homeImg{
+    margin-top:-10vh;
+    height: auto;
+    width: 100%;
+}
+
+@media only screen and (max-width: 650px){
+p{
+    padding: 5px;
+}
+    .line-under::after{
+    position: absolute;
+    content: "";
+    left: 5%;
+    bottom: 20%;
+    height: 8%;
+    width: 5%;
+    background-color: var(--orange);
+    }
+
+    .get-ready-text{
+    font-size: 40px;
+}
+    #sideBar{
+        
+        display: block;
+        background-color: var(--black);
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        transform: translateX(-100%);
+        z-index: 1000;
+        padding: 20px;
+        transition: all 0.5s;
+
+}
+.sideBar-inner{
+padding: 20px;
+}
+
+#sideBar .nav-link{
+    color: var(--orange);
+    font-size: 28px;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 80px;
+    font-weight: 100;
+}
+#navbar-icon{
+    padding-top: 0px;
+    font-size: 28px;
+}
+#navbar-icon-first{
+font-size: 28px;
+display: block;
+}
+
+}
+
+
+
+
+
+
+/******************Custom CSS *******************/
+.contact-section{
+    overflow-x: hidden;
+}
+.contact-img{
+    width: 100%;
+    height: auto;
+}
+
+.tracking-form{
+    width: 80%;
+    margin: 50px auto;
+    padding: 25px;
+    border: 1px solid var(--lightgray);
+    border-radius: 10px;
+}
+
+
+.header-menu li .header-link.active::before{
+  content: "";
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 15px;
+  height: 2px;
+  color: var(--orange);
+  background-color: var(--orange);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#navbar-icon-first{
+    color: var(--orange);
+}
+#navbar-icon{
+    color: var(--orange);
+
+}
